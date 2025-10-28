@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiring Assamese Teacher | MODERN PUBLIC SCHOOL</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f6f3;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: blue;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: green;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .contact-section {
+      text-align: center;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+      margin: 40px auto;
+    }
+
+    .contact-section h2 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .message-form input,
+    .message-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .message-form button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .message-form button:hover {
+      background-color: #004d40;
+    }
+
+    #thankYouMessage {
+      display: none;
+      color: green;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    <h1>Join Our Team — We’re Hiring an Assamese Teacher!</h1>
+  <img src="image/logo.jpg" alt="Teacher Image" class="header-image" onclick="openPopup(this)">
+
+  <!-- Popup Modal -->
+<div id="imagePopup" class="popup" onclick="closePopup()">
+  <img id="popupImg">
+</div>
+</div>  
+</header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>At <strong>MODERN PUBLIC SCHOOL</strong>, we’re reimagining how children learn, explore, and grow.
+        We believe that education should be joyful, rooted in local culture, and powered by creativity.
+        We’re looking for passionate educators who want to make a difference in Assam!</p>
+    </section>
+
+    <section>
+      <h2>Position: Assamese Teacher</h2>
+      <p><strong>Location:</strong> Madhavpur, Bordumsa (Toribari), Assam<br>
+        <strong>Job Type:</strong> Full-Time
+      </p>
+    </section>
+
+      <h2>What You’ll Do</h2>
+      <ul>
+        <li>Teach Assamese language and literature to students.</li>
+        <li>Create engaging lessons blending tradition and innovation.</li>
+        <li>Foster love for Assamese culture, poetry, and storytelling.</li>
+        <li>Collaborate with our friendly team of educators.</li>
+        <li>Participate in school events, workshops, and community programs.</li>
+      </ul>
+  </div>
+</section>
+
+    <section>
+      <h2>What We’re Looking For</h2>
+      <ul>
+        <li>Bachelor’s or Master’s degree in Assamese major.</li>
+        <li>Preference given to B.Ed/ D.El.Ed</li>
+        <li>Strong command of written and spoken Assamese.</li>
+        <li>Passion for teaching and connecting with students.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What We Offer</h2>
+      <ul>
+        <li>Supportive, startup-style work environment.</li>
+        <li>Competitive salary and growth opportunities.</li>
+        <li>Continuous learning & training sessions.</li>
+        <li>A chance to make a real difference in young minds!</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to Apply</h2>
+      <p>Send your <strong>CV</strong>, and a short <strong>cover letter</strong> to: <br>
+        📧 <strong>ajeetlamaz@gmail.com</strong></p>
+      <p>Or send your CV to <a href="tel:9366415116"><strong>9366415116</strong></a></p>
+    </section>
+                   OR
+
+    <section class="contact-section">
+      <h2>SEND MESSAGE</h2>
+      <p>If you are interested, please send a message below:</p>
+
+      <!-- ✅ Only ONE form -->
+      <form id="messageForm" action="https://formspree.io/f/xpwopkdy" method="POST" class="message-form">
+        <input type="text" name="Name" placeholder="Name" required><br>
+        <input type="text" name="Father Name" placeholder="Father's Name"><br>
+        <input type="text" name="Mother Name" placeholder="Mother's Name"><br>
+        <input type="text" name="DOB" placeholder="Date of Birth"><br>
+        <input type="text" name="Gender" placeholder="Gender"><br>
+        <input type="text" name="Marital Status" placeholder="Marital Status"><br>
+        <input type="text" name="Nationality" placeholder="Nationality"><br>
+        <input type="text" name="Category" placeholder="Category"><br>
+        <input type="text" name="Address" placeholder="Full Address"><br>
+        <input type="text" name="Email / Mobile Number" placeholder="Email / Mobile Number"><br>
+        <input type="text" name="Education Qualification" placeholder="Education Qualification"><br>
+        <textarea name="Message" placeholder="Write your message here..." rows="4"></textarea><br>
+
+        <button type="submit" id="send-message-button">Submit</button>
+      </form>
+
+      <div id="thankYouMessage">✅ Thank you! Your message has been sent successfully.</div>
+    </section>
+  </main>
+ 
+  <script>
+  const form = document.getElementById('messageForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      thankYou.style.display = 'block';
+      form.reset();
+    } else {
+      alert('Oops! Something went wrong. Please try again.');
+    }
+  });
+</script>
+
+<script>
+  function openPopup(img) {
+    const popup = document.getElementById("imagePopup");
+    const popupImg = document.getElementById("popupImg");
+    popupImg.src = img.src;
+    popup.style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
+
+ <!-- Popup container -->
+<div id="imagePopup" class="popup" onclick="closePopup()">
+  <img id="popupImg" src="" alt="Popup Image">
+</div>
+
+</body>
+</html>

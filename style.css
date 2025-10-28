@@ -1,0 +1,56 @@
+/* === HEADER CONTAINER === */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* ensures image stays right */
+  gap: 15px;
+}
+
+/* === HEADER IMAGE (CIRCULAR) === */
+.header-image {
+  width: 150px;          /* adjust for size */
+  height: 150px;
+  border-radius: 50%;    /* makes the image circular */
+  object-fit: cover;     /* fills the circle neatly */
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* === RESPONSIVE (mobile) === */
+@media (max-width: 700px) {
+  .header-container {
+    flex-direction: row; /* keep text left, image right */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .header-container h1 {
+    font-size: 1.3em;
+  }
+}
+
+/* === POPUP (IMAGE VIEWER) === */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
